@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+      $("#knowmore").click(function(){
+        $("#formva").toggle();
+      });
+    });
+    </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+
+        :root {
+        --hovercolor :rgb(255, 0, 0);
+      }
+  </style>
+      
+    <script>
+        function hoverit(x){
+            document.querySelector(':root').style.setProperty('--hovercolor', x);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(146, 121, 121, 0); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6394F8; 
+}
+
+
+      .flexkacontainer { display: flex; 
+       flex-direction: row;
+       justify-content: space-around;
+       margin: 10px;}
+
+       @media (max-width: 930px) {
+nav{
+  background-image: url(./images/logo1.jpg);
+  padding:50px;
+ 
+}
+
+#image1 {
+    display: none;
+}
+#dem{
+    color: red;
+}
+
+
+  .flexkacontainer {
+    flex-direction: column;
+   margin: 10px;
+   justify-content: space-around;
+    align-items: center;
+  justify-content: center;
+  }
+}
+#lovetoz{
+  padding: 10px 10px ;
+}
+#lovetoz li{
+  list-style: none;
+  padding: 10px 10px 10px 1px ;
+}
+#formva{
+    display: none;
+}
+
+.image1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+#dropdownbut  :hover{
+background-color:#6394F8;
+border-color: #6394F8;
+}
+
+.card{
+    margin: 5px;
+
+}
+.nav-link{
+    text-shadow: 5px 1px 4px white;
+}
+
+.scrollablelist{
+  height: 250px;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#lovetoz > li {
+  color: #0074D9;
+}
+
+.card:hover{
+    box-shadow: 0px 1px 7px 2px var(--hovercolor);
+}
+#checkoutbutton{
+    border: 0;
+height: 40px;
+z-index: 1;
+padding: 0 50px;
+border-radius: 20px;
+background-color: #6394F8;color: white;
+}
+#badge {
+    background-color: #6394F8;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+    </style>
+   
+</head>
+<title>Grocery Delivery</title>
+<body >
+    <nav id="navbar" style="
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;" class="navbar navbar-expand-lg navbar-light ">
+        <a  style="font-weight: 900; font-size: large;color: black;" class="navbar-brand" href="/">
+            <i style="width: 50px; height: 50px;">
+                <img id="image1" style="width:50%; height: 50%" src="./images/logo1.jpg"></i> 
+        
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " href="/">Total: ₹<span id="jj">0</span> <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item active">
+                <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " onclick=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>Quantity <span id="badge">0</span></a>
+              </li>
+
+              <div class="dropdown" style="margin-right: 80px;">
+             
+                <button
+                id='dropdownbut' style="background-color:#6394F8;border-color: #6394F8;"
+                class="btn btn-secondary dropdown-toggle" style="margin-right: 70px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Checkout
+                </button>
+             
+                <div style="width: 200px;" id="Done" class="dropdown-menu scrollablelist" aria-labelledby="dropdownMenuButton">
+                  <ul id='lovetoz' style="position:relative">
+                <li style="margin: 10px;">Cart Is empty </li>
+                 <button  onclick="yourproductisready()" id='checkoutbutton'>
+                      Checkout
+                    </button>
+                  </ul>
+                 
+                </div>
+              </div>
+    
+          </ul>
+    
+        </div>
+      </nav>
+
+
+      
+<section >
+
+   <div class="flexkacontainer" >
+      
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/apple.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Apple</h5>
+            <p class="card-text">Price: ₹ 60/Kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(60,0)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(60,0)">Remove </a>
+
+        </div>
+        </div>
+
+
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/banana.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Banana</h5>
+            <p class="card-text">Price: ₹ 30/kg</p>
+            <a class="btn btn-primary"  onclick="addtocart(30,1)">Add to Cart</a>
+            <a class="btn btn-success"  onclick="removefromcart(30,1)">Remove </a>
+        </div>
+        </div>
+
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/galiamelon.jpg" alt="Card image cap">  
+            <div class="card-body">
+            <h5 class="card-title">Galiamelon</h5>
+            <p class="card-text">Price: ₹ 100</p>
+         <a  class="btn btn-primary" onclick="addtocart(100,2)">Add to cart</a> 
+         
+         <a class="btn btn-success"  onclick="removefromcart(100,2)">Remove </a>
+        </div>  
+        </div>
+
+       
+   
+</div>
+
+</section>
+
+<section>
+    <div class="flexkacontainer">
+       <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/grapes.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Grapes</h5>
+            <p class="card-text">Price: ₹ 90/kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(90,3)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(90,3)">Remove </a>
+
+        </div>
+        </div>
+
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/lemon.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Lemon</h5>
+            <p class="card-text">Price: ₹ 30/kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(30,4)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(30,4)">Remove </a>
+
+        </div>
+        </div>
+
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/Orange.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Orange</h5>
+            <p class="card-text">Price: ₹ 60/kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(60,5)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(60,5)">Remove </a>
+
+        </div>
+        </div>
+
+       
+    </div>
+</section>
+
+<section>
+  <div class="flexkacontainer">
+     <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/Pineapple.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Pineapple</h5>
+            <p class="card-text">Price: ₹ 90/kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(90,6)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(90,6)">Remove </a>
+
+        </div>
+        </div>
+
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/Promogranate.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Promogranate</h5>
+            <p class="card-text">Price: ₹ 95/kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(95,7)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(95,7)">Remove </a>
+
+        </div>
+        </div>
+        <div onmouseover="hoverit('red')" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/Berry.jpg" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">Berry</h5>
+            <p class="card-text">Price: ₹ 30/kg</p>
+            <a  class="btn btn-primary"  onclick="addtocart(30,7)">Add to Cart</a>
+            
+            <a class="btn btn-success"  onclick="removefromcart(30,7)">Remove </a>
+
+        </div>
+        </div>
+
+         
+  </div>
+</section>
+
+
+
+<section   style="margin: 20px;">
+    <div id="knowmore" style="text-align: center;"><button type="button" class="btn btn-outline-danger">Know More</button></div>
+
+  </section>
+  <section  style="margin: 20px;">
+    <div id="formva"> <form>
+       <h2>Contact Us</h2>
+       <div class="row">
+         
+         <div class="col">
+           <input type="text" id="first" class="form-control" placeholder="Name">
+         </div>
+         <div class="col">
+           <input type="email"  id="email" type="text" id="sec" class="form-control" placeholder="Email">
+         </div>
+       </div>
+       <div style="margin: 5px;" id="dem"> </div>
+       <button  type="button" onclick="submitform()" class="btn btn-primary">Submit</button>
+      
+     </form>
+   </div>
+   </section>
+
+
+
+
+ <script>
+   function submitform(){
+        var patternem = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+                let firs=document.getElementById('first').value;
+      let seco=  document.getElementById('email').value;
+        if (firs=='' || seco=='' || !seco.match(patternem) ){
+          document.getElementById('dem').innerHTML='Please Provide Valid Information';
+        }
+        else if (seco.match(patternem)){
+          
+          document.getElementById('dem').innerHTML='Done';
+          alert('Thank you, Your form has been successfully submited')
+        }
+      }
+function yourproductisready(){
+let oz=document.getElementById('lovetoz');
+oz.innerHTML="<h1>Thank You</h1>";
+document.getElementById('Done').style.display='block';
+console.log('a');
+
+}
+
+
+   let totalbill=[0,0,0,0,0,0,0,0,0]
+   let nameOfMenu=['Apple','Banana','Galiamelon','Grapes','Lemon','Orange','Pineapple','Promogranate','berry']
+   let toatalbadge=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+  function addtocart(pricee,ind){
+totalbill[ind]+=pricee;
+toatalbadge[ind]+=1
+console.log(toatalbadge);
+
+var price=0;
+var badge=0;
+for (let i = 0; i < totalbill.length; i++) {
+    price += totalbill[i];
+    badge+=toatalbadge[i];
+}
+console.log(badge);
+
+console.log(totalbill)
+console.log(price)
+// badge+=1;
+ document.getElementById('jj').innerHTML=price;
+ document.getElementById('badge').innerHTML=badge;
+    
+    // lllllllllllllllllllllllllllllLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+
+
+
+    var aaj=0;
+  console.log(aaj);
+  var lis = document.querySelectorAll('#lovetoz li');
+  
+  for(var jj=0; li=lis[jj]; jj++) {
+      li.parentNode.removeChild(li);
+  }
+  
+
+   
+   let listElement = document.getElementById('lovetoz');
+   let numberOfListItems = totalbill.length;
+   let listItem;
+    let i;
+
+
+    for (i = 0; i < numberOfListItems; ++i) {
+        listItem = document.createElement('li');
+
+        listItem.innerHTML =nameOfMenu[i] +" : ₹" + totalbill[i];
+        listElement.appendChild(listItem);
+    }
+
+  }
+  function removefromcart(pricee,ind){
+    
+ toatalbadge[ind]-=1;
+    totalbill[ind]-=pricee;
+    if(toatalbadge[ind]<=0){
+      toatalbadge[ind]=0;
+    }
+    if(totalbill[ind]<=0){
+      totalbill[ind]=0;
+    }
+    price=0;
+    badge=0;
+    for (let i = 0; i < totalbill.length; i++) {
+ price+=totalbill[i];
+ badge+=toatalbadge[i];
+     console.log(totalbill)
+     console.log(price)
+    
+
+
+     
+}
+
+ document.getElementById('jj').innerHTML=price;
+ document.getElementById('badge').innerHTML=badge;
+    
+    
+
+
+// Remove bill list from cart
+var aaj=0;
+  console.log(aaj);
+  var lis = document.querySelectorAll('#lovetoz li');
+  
+  for(var jj=0; li=lis[jj]; jj++) {
+      li.parentNode.removeChild(li);
+  }
+  
+
+   
+   let listElement = document.getElementById('lovetoz');
+  
+
+   let numberOfListItems = totalbill.length;
+   let listItem;
+    let i;
+console.log(totalbill);
+console.log(totalbill[0]);
+
+    for (i = 0; i < numberOfListItems; ++i) {
+        listItem = document.createElement('li');
+
+        listItem.innerHTML =nameOfMenu[i] +" : ₹" + totalbill[i];
+        listElement.appendChild(listItem);
+        
+    }
+
+
+
+  }
+
+ </script>
+
+
+ <!-- Bootstrap CDN links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

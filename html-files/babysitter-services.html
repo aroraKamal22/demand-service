@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .neon{
+            
+  animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 20px  blue, 0 0 30px  blue, 0 0 0px  blue;;
+  }
+  
+  to {
+    box-shadow: 0 0 20px lightblue, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+  }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitters Services</title>
+    <link rel = "icon" href =  "https://img.icons8.com/flat-round/64/000000/baby-care.png" 
+        type = "image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/baby-service.css">
+    <style>
+        .col-xs-2, .col-xs-3, .col-xs-5{
+            width: 16.67%;
+            margin-left: 55px;
+        }
+    </style>
+<body>
+    <div class="vhp-HA-inspired vhp-green-button">
+        <section style="margin:30px ;" class="vhp-HA-condensed">
+            <a style="margin-right:10px" href="#" class="header-links">Apply to Jobs</a>
+            <button 
+            id='dropdownbut' style=" background-color:#6394F8;border-color: #6394F8;"
+            class="btn btn-secondary " style="margin-right: 70px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Log in
+            </button>
+         
+            <div style="width: 200px;margin-top: 5px;" id="Done" class="dropdown-menu scrollablelist" aria-labelledby="dropdownMenuButton">
+             
+                <form id="records" style="text-align: center;">
+                    <input type="email" id="email" placeholder="Email Address" required 
+                    data-validation-required-message="Please enter your Email" >
+                    <br><br>
+                    <input type="password" name="pass" id="password" placeholder="Password" required
+                    data-validation-required-message="Enter Your password " >
+                    <br> <br>
+                    <div class="me" style="margin-bottom: 10px;">
+                        <a href="#">Forgot password?</a>
+                        <input type="checkbox" name="rem" id="rem" 
+                         > Remember me
+                    </div>
+                    <button class="btn btn-secondary " style="background-color: #6394F8;" type="button" >Log in</button>
+                </form>
+    
+            </div>
+            <!-- <div class="accordion login header-links">
+                <button class="accordion-toggle btn-log-in">
+                    <span>Log In</span>
+                </button>
+              
+            </div> -->
+        </section>
+        <section class="vhp-hero vhp-header-condensed" style="background-image: url(../images/baby-services/imp.jpg);">
+            <div class="row vhp-titles">
+                <div class="vhp-title text-center">Find trusted caregivers for your every need</div>
+                <div class="secondary-header">To get started, choose an option:</div>
+            </div>
+        </section>
+        <div class="blue-bg">
+            <ul class="vertical-selection slideIn">
+                <a href="#"  >
+                    <li  class="neon">
+                        <div class="vertical-name">CHILD CARE</div>
+                    </li>
+                </a>
+                <a    href="#">
+                    <li class="neon">
+                        <div class="vertical-name">SCHOOL SUPPORT</div>
+                    </li>
+                </a>
+                <a    href="#">
+                    <li class="neon">
+                        <div class="vertical-name">SENIOR CARE</div>
+                    </li>
+                </a>
+                <a   href="#">
+                    <li class="neon">
+                        <div class="vertical-name">HOUSEKEEPING</div>
+                    </li>
+                </a>
+                <a   href="#">
+                    <li  class="neon" >
+                        <div class="vertical-name">SPECIAL NEEDS</div>
+                    </li>
+                </a>
+                <a   href="#">
+                    <li class="neon">
+                        <div class="vertical-name">PET CARE</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="press-bar"></div>
+        <div class="middle-banners">
+            <a href="#" class="middle-box child-care-options"
+                style="background-image: url(../images/baby-services/vhp/full-time-child-care.png);">
+                <div class="middle-title">Explore your full-time child care options</div>
+                <div class="middle-subtitle">See local rates and make an informed choice</div>
+                <button class="btn btn-primary-2">
+                    <span>Compare options</span>
+                </button>
+            </a>
+            <a href="#" class="middle-box home-pay-options"
+                style="background-image: url(../images/baby-services/vhp/homepay-vhp-dark.png);">
+                <div class="middle-title">Care.com HomePay</div>
+                <div class="middle-subtitle">Nanny taxes made easy</div>
+                <button class="btn btn-secondary-2 white-btn">
+                    <span>Learn More</span>
+                </button>
+            </a>
+        </div>
+        <hr class="hidden">
+        <section class="vhp-footer condensed">
+            <div class="footer">
+                <div class="discover condensed">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <h4>About Care.com</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">CA Point of Collection Notice</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-2">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="#">Safety</a></li>
+                                <li><a href="#">Advice</a></li>
+                                <li><a href="#">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <h4>Discover</h4>
+                            <ul>
+                                <li><a href="#">HomePay℠ - nanny tax help</a></li>
+                                <li><a href="#">List your business</a></li>
+                                <li><a href="#">Care@Work - benefits programs</a></li>
+                                <li><a href="#">Become an affiliate</a></li>
+                                <li><a href="#">Care Directory</a></li>
+                                <li><a href="#">Online Classes for Kids</a></li>
+                                <li><a href="#">COVID resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="apps condensed">
+                                <a href="/careiTunesDownload.do" class="btn"><img
+                                        src="../images/baby-services/appStore.png" alt=""></a>
+                                <a href="/carePlayStoreDownload" class="btn"><img
+                                        src="../images/baby-services/googlePlay.png" alt=""></a>
+                            </div>
+                            <div class="social condensed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn-log-in").click(function(){
+                $(".details-fill").toggle();
+            })
+        })
+    </script>
+</body>
+
+</html>

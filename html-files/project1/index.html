@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delivery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+  $(document).ready(function(){
+    $("#knowmore").click(function(){
+      $("#formva").toggle();
+    });
+  });
+  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+<style>
+
+#third-text{
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative;
+  animation: thirdmove 5s infinite;
+}
+</style>
+
+
+
+<style>
+#wrapper {
+	background-color: red;
+
+	color: white;}
+
+#formva{
+  padding: 50px;
+  display: none;
+}
+#dem{
+  color: red;
+}
+#hi {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+	animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+	0% {
+	color: red;
+	}
+	10% {
+		color: red;
+	}
+	30% {
+		color: white;
+	}
+	50% {
+		color: red;
+	}
+	60% {
+		color: red;
+	}
+	80% {
+		color: white;
+	}
+	100% {
+		color: red;
+	}
+}
+
+#hi:after {
+	content: "";
+    animation: spin 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% { content:"Best Delivery in"; }
+  100% { content:"The World"; }
+}
+</style>
+
+
+  </head>
+
+<body style="overflow-x: hidden;">
+    <!-- NAVBAR WILL COME HERE -->
+    <nav  class="navbar navbar-expand-lg navbar-light ">
+        <a style="font-weight: 900; font-size: large;color: black;" class="navbar-brand" href="/"><i style="width: 50px; height: 50px;"><img style="width:100px; height: 100px" src="delivery-truck.png"></i> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " href="/">About Us <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item active">
+                <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " href="/">SERVICES<span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " href="/">PARTNER <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " href="/">CAREERS <span class="sr-only">(current)</span></a>
+              </li>
+
+
+              <li class="nav-item active">
+                <a class="nav-link" style="font-size: larger;font-weight: 700; color: black; " href="/">SUPPORT<span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                <a style="margin: 5px 20px;;background-color: red;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+                  <div style="font-weight:bolder; color: black;margin: 0 10px;"> BULLETIN</div>
+                </a>
+      
+              </li>
+
+              <li class="nav-item">
+                <a style="margin: 5px 20px;background-color: red;"  type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+                  <div style="font-weight:bolder;color: black;"> START SHIPPING</div>
+                </a>
+      
+              </li>
+    
+          </ul>
+    
+        </div>
+      </nav>
+
+    <img style="display: block; width: 100%;height: auto;background-color: black;" src="banner-img.gif">
+<div class="row">
+    <div class="col-lg-6" style="background-color: red;">
+        
+      <div id="wrapper">
+          <p id="hi"></p>
+        </div>
+      
+    
+    </div>
+    <div class="col-lg-6" style="background: black;">
+    
+   <form style="background: white;margin: 10px 14px;border-radius:4px ;">
+    <div style="width: 100%; background-color: red;color: white;text-align: center;border-top-left-radius: 4px;
+    border-top-right-radius: 4px;">
+        <a style="font-size: 2rem;font-weight: 700;" >TRACK ORDER</a>
+</div>   
+    <ul style="list-style-type: none;">
+
+           
+           <li>
+               
+<input name="trackorder"  onclick="changename('Mobile Number')" id="mobilenumber"     type="radio" name="Mobile Number" >
+<label for="Mobile Number">Mobile Number</label>
+           </li>
+           <li>    
+            <input  onclick="changename('Tracking ID')" name="trackorder" id="trackingid" type="radio" name="Tracking ID" >
+            <label for="Tracking ID" >Tracking ID</label>
+           </li>
+           <li>
+               
+            <input  onclick="changename('Order ID/ Ref ID')" name="trackorder" id="orderid" type="radio" name="Order ID" >
+            <label for="Order ID" >Order ID/ Ref ID</label>
+            </li>
+            <li>
+               
+            <input onclick="changename('LTL Shipment')" name="trackorder" id="LTL" type="radio" name="LTL Shipment" >
+            <label for="LTL Shipment" >LTL Shipment</label>
+             </li>
+
+      <li>
+               
+        <label for="Mobile Number" id="demo" >Mobile Number</label>   
+        <input id="demo1" style="border-radius:10px; border-color: black;padding: 0 10px; "
+        placeholder="Mobile Number" type="text" name="Mobile Number" >
+            
+         </li>
+       </ul>
+    </form>
+    </div>
+    
+</div>
+    <div></div>
+
+    <div></div>
+    <div style="text-align: center; margin: 20px; padding-top:10px ;
+    height: 90px;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    background: red;
+    color: white;">
+Delivered More than 1k+ Packages
+    </div>
+
+    <section style="margin: 50px 80px;">
+
+      <div class="row">
+        <div class="col-lg-6" style="background-color: white;">
+            
+       
+          <h2 style="font-weight: 700;font-size: 3rem;">Services</h2>
+<h5>Our aim is to build the operating system for commerce in India. We provide parcel transportation, warehousing, freight, reverse logistics, cross-border and technology services to over 10000 customers including all of India’s largest e-commerce companies and leading enterprises. Our supply chain platform and logistics operations bring flexibility, breadth, efficiency and innovation to our customers’ supply chain and logistics operations. Our operations,
+   infrastructure and technology
+    enable our customers to transact with us
+     and our partners at the lowest costs.   </h5>        
+        </div>
+        <div class="col-lg-6" style="background: white;">
+        <img src="image1.gif">
+    </div>   
+    </section>
+    <section   style="margin: 20px;">
+      <div id="knowmore" style="text-align: center;"><button type="button" class="btn btn-outline-danger">Know More</button></div>
+  
+    </section>
+    <section  style="margin: 20px;">
+     <div id="formva"> <form>
+        <h2>Contact Us</h2>
+        <div class="row">
+          
+          <div class="col">
+            <input type="text" id="first" class="form-control" placeholder="Name">
+          </div>
+          <div class="col">
+            <input type="email"  id="email" type="text" id="sec" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div style="margin: 5px;" id="dem"> </div>
+        <button  type="button" onclick="submitform()" class="btn btn-primary">Submit</button>
+       
+      </form>
+    </div>
+    </section>
+    <script>
+      function submitform(){
+        var patternem = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+                let firs=document.getElementById('first').value;
+      let seco=  document.getElementById('email').value;
+        if (firs=='' || seco=='' || !seco.match(patternem) ){
+          document.getElementById('dem').innerHTML='Please Provide Valid Information';
+        }
+        else if (seco.match(patternem)){
+          
+          document.getElementById('dem').innerHTML='Done';
+          alert('Thank you, Your form has been successfully submited')
+        }
+      }
+      function changename(strr){
+        document.getElementById('demo').innerHTML=strr;
+        document.getElementById('demo1').setAttribute("placeholder", strr);
+
+      }
+      </script>
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

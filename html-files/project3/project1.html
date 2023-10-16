@@ -1,0 +1,518 @@
+ <!-- Here we will declare Header  -->
+
+ <!-- Whole page is divided into Sections 
+ 
+ adn further Sections are divided into Div elements -->
+
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <link rel="stylesheet" href="style.css">
+  <title>Best Plumber and Electrician in Kharar</title>
+  <link rel="icon" href="favicon1.png">
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    function searchFun() {
+      let filter = document.getElementById("myInput").value.toUpperCase();
+      let tr = document.getElementsByClassName("mm");
+      for (var i = 0; i < tr.length; i++) {
+
+        let td = tr[i];
+        if (td) {
+
+          let textvalue = td.textContent || td.innerHTML;
+          if (textvalue.toUpperCase().indexOf(filter) > -1) {
+            document.getElementsByClassName("qw")[i].style.display = "block";
+            console.log(textvalue.toUpperCase().indexOf(filter)); //  tr[i].style.display = "";
+          } else {
+            // tr[i].style.display = "none";   
+            document.getElementsByClassName("qw")[i].style.display = "none";
+            document.getElementById("vv").style.display = "block";
+
+          }
+
+        }
+      }
+
+
+    }
+  </script>
+
+</head>
+
+
+
+
+
+
+<section style="background-color: #0099ff">
+  <nav style="color: #0099ff;" class="navbar navbar-expand-lg navbar-light ">
+    <a style="font-weight: 900; font-size: large;color: white;" class="navbar-brand" href="project1.html"><i
+        style="width: 50px; height: 50px;"><img style="width:50px; height: 50px" src="builder.png"></i> 
+        KHARAR SERVICE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" style="font-size: larger;font-weight: 800; color: white; " href="project1.html">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+            <div style="font-weight:bolder; color: white;"> Hire Now </div>
+          </a>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" style="color: white; font-weight: 700;" id="navbarDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact Us </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="idea.html">Earn Money </a>
+            <a class="dropdown-item" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal3"
+              data-whatever="@mdo">Register Yourself</a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" type="button" class="btn btn-dark"  href="contact.html">Contact Us</a>
+            <a class="dropdown-item" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal3"
+              data-whatever="@mdo">Complain</a>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+</section>
+
+<body>
+
+  <!-- Here will come the body part   -->
+
+
+<section class="d-flex justify-content-center" style=" background-color: white;  margin: 1% 5%; border-radius: 20px;">
+  
+    <div style="max-width: 100%;" >
+   
+        <div style="margin: 0% 5%; border-radius: 10px;">
+          <h1 style="font-size: 5rem; font-weight: 500; font-weight: bold; font-family: sans-serif; ">GREAT SERVICE
+          </h1>
+          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 2rem; 
+     font-weight: bold; color: #0000ffbb;"> From Experts</p>
+
+          <span>
+            <h5 style="font-weight: 600; margin: 2% 0% 0% 0%; font-size: 2rem;"> WE HAVE </h5>
+            <span class="row nm">
+
+
+              <div class="col-lg-4 col-sm-4">
+                <span class="card nm ">
+                  <img style="width:70%;" class="card-img-top" src="hourssupport.png" alt="Plumber in Kharar">
+                  <span style="padding: 0%;" class="card-body">
+                    <h5 style="font-weight: 600;" class="card-title ">24X7 Support</h5>
+
+                  </span>
+                </span>
+              </div>
+
+
+              <div class="col-lg-4 col-sm-4">
+                <span class="card nm ">
+                  <img style="width:70%;" class="card-img-top" src="laugh.png" alt="Electrician in Omega city Kharar">
+                  <span style="padding: 0%;" class="card-body">
+                    <h5 style="font-weight: 600;" class="card-title ">Happy Customers</h5>
+
+                  </span>
+                </span>
+              </div>
+
+
+              <div class="col-lg-4 col-sm-4">
+                <span class="card nm ">
+                  <img style="width:70%;" class="card-img-top" src="customerservice.png" alt="Best Professionals">
+                  <span style="padding: 0%;" class="card-body">
+                    <h5 style="font-weight: bold;" class="card-title ">Professionals</h5>
+
+                  </span>
+                </span>
+              </div>
+            </span>
+
+
+          </span>
+
+
+          </span>
+        </div>
+
+      </div>
+
+
+    </div>
+  
+
+
+
+
+
+
+</section>
+
+
+<section class="d-flex justify-content-center section2" >
+  <div  style="margin: 0%;">
+  <div class="row">
+    <!-- <div style="max-width: 100%;" class="col-lg-6 col-md-6  col-sm-6"> -->
+    <div style="padding: 5% 7%; max-width: 100%;" class="col-lg-6 col-md-6  col-sm-6">
+      <div style="margin: 5%; border-radius: 10px;">
+        <h1 style=" font-weight: 500; font-weight: bold; font-family: sans-serif; ">
+          What Kind Of Service Do You Need ? </h1>
+          
+          
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          data-whatever="@mdo"   >Tell Us Here</button>
+      </div>
+    </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6  ">
+        <div class="card qw"  style="width: 10rem;margin: 2% 30%;">
+          <img class="card-img-top " data-target="#exampleModal" data-toggle="modal" src="technician.png" alt="technician">
+          <div class="card-body">
+            <h5 class="card-title mm">Cannot Find What You Need?</h5>
+            <p class="card-text ">
+            </p>
+
+            <h5 class="card-title "></h5>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+            data-whatever="@mdo" onclick="jai(id)" id="Tell Us Your Service Here">Tell Us Here</button>
+
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<div class="d-flex justify-content-center">
+  <h3 style="text-align: center; font-weight: 900;">-OR-</h3></div>
+
+
+
+
+
+
+<div style="margin: 4%;">
+
+
+  <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    <input id="myInput" onkeyup="searchFun()" class="form-control form-control-sm ml-3 w-75" type="text"
+      placeholder="Search Your Service Here " aria-label="Search">
+  </form>
+
+
+</div>
+<section>
+  <div style="margin: 3%;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card qw" style="width: 10rem;margin: 2% 30%;">
+            <img class="card-img-top" data-target="#exampleModal" data-toggle="modal" src="plumber.png"
+              alt="Plumber in kharar">
+            <div class="card-body">
+              <h5 class="card-title mm">Plumber</h5>
+              <p class="card-text ">
+              </p>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo" onclick="jai(id)" id="Plumber">Hire Now</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card qw" style="width: 10rem; margin: 2% 30%;">
+            <img class="card-img-top" data-target="#exampleModal" data-toggle="modal" src="electrician.png"
+              alt="Electrician landran road">
+            <div class="card-body">
+              <h5 class="card-title mm">Electrician</h5>
+              <p class="card-text"> </p>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo" onclick="jai(id)" id="Electrician">Hire Now</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card qw" style="width: 10rem; margin: 2% 30%;" >
+            <img class="card-img-top" data-target="#exampleModal" data-toggle="modal" src="acrepair.png"
+              alt="Landran road service">
+            <div class="card-body">
+              <h5 class="card-title mm"> <div style="  font-size:15px">Air Conditioner/Refrigerator/Juicer</div> Repair and Servicing</h5>
+              <p class="card-text"> </p>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo" onclick="jai(id)" id="Air Conditioner Service">Hire Now</button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin: 3%;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card qw" style="width: 10rem;margin: 2% 30%;">
+            <img class="card-img-top" data-target="#exampleModal" data-toggle="modal" src="fridge .png"
+              alt="Best service in kharar">
+            <div class="card-body">
+              <h5 class="card-title mm">Refrigerator Repair</h5>
+              <p class="card-text ">
+              </p>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo" onclick="jai(id)" id="Electronic Device Repair">Hire Now</button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card qw" style="width: 10rem; margin: 2% 30%;">
+            <img class="card-img-top" data-target="#exampleModal" data-toggle="modal" src="repait.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title mm">Electronic Device Service</h5>
+              <p class="card-text"> </p>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo" onclick="jai(id)" id="Dragling">Hire Now</button>
+
+            </div>
+          </div>
+        </div>
+
+       
+        
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card qw" id="vv" style="width: 10rem;margin: 2% 30%;">
+            <img class="card-img-top" data-target="#exampleModal" data-toggle="modal" src="technician.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title mm">Cannot Find Your Service ?</h5>
+              <p class="card-text "> Tell Us now
+              </p>
+
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo" onclick="jai(id)" id="Tell Us Your Service Here">Hire Now</button>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hire Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="recipient-name" style="font-weight: bold; font-size: 2rem;" class="col-form-label">Your Good
+              Name  </label>
+            <input type="text" name="fname" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" style="font-weight: bold; font-size: 2rem;" class="col-form-label">Your
+              Number<p style="font-size: 15px; color: gray;">(we may contact you for more details)</p></label>
+            <input type="text" name="lname" class="form-control" id="message-text"> </input>
+          </div>
+
+          <div class="form-group">
+            <label for="message-text" style="font-weight: bold; font-size: 2rem;" class="col-form-label">You
+              Need<p style="font-size: 15px; color: gray;"></p></label>
+            <input type="text" name="phone" placeholder="What is Your Requirement" class="form-control" id="input123"> </input>
+          </div>
+
+          <button type="submit" style="font-weight: bold; font-size: 2rem;" class="btn btn-primary">Hire Now</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send Message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Your Good Name</label>
+            <input type="text" name="fname" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Your Number</label>
+            <input type="text" name="lname" class="form-control" id="message-text"></input>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Your Message</label>
+            <input type="text" name="phone" class="form-control" id="message-text" placeholder="Type Here.."></input>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hire Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Your Good Name</label>
+            <input type="text" name="fname" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Your Number</label>
+            <input type="text" name="lname" class="form-control" id="message-text"></input>
+          </div>
+          <label for="message-text" class="col-form-label">What Kind of Service you Want</label>
+          <input type="text" name="phone" placeholder="Tell Us what you want" class="form-control"
+            id="message-text"></input>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Hire Now</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+    </div>
+  </div>
+</div>
+</div>
+<script async src="https://comments.app/js/widget.js?2" data-comments-app-website="807AYV0z" data-limit="5"></script>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#0099ff" fill-opacity="1"
+    d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,202.7C672,213,768,171,864,154.7C960,139,1056,149,1152,133.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+  </path>
+</svg>
+
+
+<script>
+  function jai(i) {
+    var i;
+    document.getElementById("input123").value = i;
+  };
+</script>
+
+<script>
+  function name12(wa){
+       
+    
+      document.getElementById("mn") = wa;
+  };
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
